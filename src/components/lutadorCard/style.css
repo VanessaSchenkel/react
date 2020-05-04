@@ -1,0 +1,51 @@
+.lutador-card {
+	overflow: hidden;
+	display: flex;
+	align-self: center;
+	height: 100px;
+	width: 100px;
+}
+
+.lutador-image {
+	height: 100px;
+	width: 89px;
+	filter: grayscale(100%);
+	transition: all 0.3s;
+	box-sizing: border-box;
+}
+
+.lutador-image:hover {
+	border: solid 5px yellow;
+	filter: none;
+}
+
+.lutador-card label {
+	cursor: pointer;
+	font-size: 15px;
+	white-space: nowrap;
+}
+
+.nome-do-jogador {
+	display: none;
+	transition: all 0.3s;
+	color: white;
+}
+
+.lutador-card label:hover .nome-do-jogador {
+	position: relative;
+	transition: all 0.1s;
+	bottom: 22px;
+	left: 4.5px;
+	display: flex;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 14px;
+	background-color: rgba(255, 0, 0, 0.57);
+	width: 80px;
+}
+
+input[type="radio"] {
+	visibility: hidden;
+}

@@ -1,0 +1,78 @@
+.poder-esquerda {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+}
+
+.poder-direita {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	transform: scaleX(-1);
+}
+
+.direita {
+	position: fixed;
+	right: 0px;
+	bottom: 130px;
+}
+
+.esquerda {
+	position: fixed;
+	bottom: 130px;
+}
+
+.paragrafo-direita {
+	transform: rotateY(180deg);
+	position: relative;
+	right: 150px;
+}
+
+.poderes {
+	font-family: "Roboto";
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 35px;
+	color: #ffffff;
+	text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.especificacoes {
+	font-family: "Roboto";
+	font-size: 12px;
+	line-height: 19px;
+	display: flex;
+	align-items: center;
+	text-align: right;
+	color: #ffffff;
+}
+
+.especificacoes-direita {
+	transform: rotateY(180deg);
+	position: relative;
+	right: 150px;
+}
+
+.paragrafo {
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 19px;
+	display: flex;
+	align-items: center;
+	text-align: right;
+	color: #ffffff;
+}
+.botao-com-poder {
+	margin-bottom: 10px;
+	height: 44px;
+	border: none;
+	transition: all .2s ease;
+	background: linear-gradient(90deg, rgba(21, 130, 165, 0.8) 73.89%, rgba(20, 103, 129, 0) 100%);
+}
+
+.botao-com-poder:hover {
+	cursor: pointer;
+	transition: all .2s ease;
+	padding: 1px;
+	background: linear-gradient(90deg, rgba(17, 102, 131, 0.8) 73.89%, rgba(20, 103, 129, 0) 100%);
+}

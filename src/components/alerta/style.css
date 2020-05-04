@@ -1,0 +1,45 @@
+.alerta {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	z-index: 2;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.alerta-texto {
+	color: white;
+	font-weight: bold;
+	padding: 20px;
+	text-decoration: none;
+	background-color: #b63a24;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	padding: 10px 30px;
+	border-radius: 6px;
+	border: black;
+	font-family: 'Roboto';
+	font-weight: 900;
+	font-size: 22px;
+	z-index: 2;
+	text-decoration: none;
+}
+
+.ok-alerta {
+	background-color: white;
+	color: black;
+	padding: 10px 55px;
+	font-family: 'Roboto';
+	font-size: 20px;
+	align-self: center;
+	margin: 15px 5px;
+	border-radius: 6px;
+}
+
+.ok-alerta:hover {
+	background-color: rgb(255, 238, 0);
+	cursor: grabbing;
+}

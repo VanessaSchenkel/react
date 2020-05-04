@@ -1,0 +1,32 @@
+.home {
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+}
+
+.botao-jogar {
+	background-color: #f6dd00;
+	position: relative;
+	top: 35px;
+	align-self: center;
+	z-index: 2;
+	padding: 10px 30px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 6px;
+	border: black;
+	position: absolute;
+	left: 46%;
+	top: 30%;
+	font-family: 'Roboto';
+	font-weight: 900;
+	font-size: 22px;
+	transition: all 0.4s ease 0s;
+}
+
+.botao-jogar:hover {
+	cursor: pointer;
+	letter-spacing: 1px;
+	border-radius: 0;
+	background-color: #f1c604;
+	transition: all 0.4s ease 0s;
+}

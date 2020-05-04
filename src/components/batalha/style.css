@@ -1,0 +1,53 @@
+.metade-batalha {
+	width: 50%;
+	max-height: 100%;
+}
+
+.luta-img-esquerda {
+	height: 305px;
+	position: fixed;
+	bottom: 20px;
+	left: 300px;
+	transform: scaleX(-1);
+	animation-name: lutarEsq;
+  	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	 animation-timing-function: cubic-bezier(0,1.54,1,-0.43);
+}
+
+.luta-img-direita {
+	height: 305px;
+	position: fixed;
+	bottom: 20px;
+	animation-name: lutarDir;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0,1.54,1,-0.43);
+}
+
+.personagem-lutando {
+	position: fixed;
+	top: 10px;
+}
+
+.esq-false {
+	filter: grayscale(100%);
+	animation: none;
+}
+
+
+.dir-true {
+	filter: grayscale(100%);
+	animation: none;
+}
+
+@keyframes lutarEsq {
+	0%   {right:0px; bottom:0px;}
+	50%  {right:150px; bottom:20px;}
+	100% {right:0px; bottom:0px;}
+  }
+@keyframes lutarDir {
+	0%   {right:500px; bottom:0px;}
+	50%  {right:500px; bottom:20px;}
+	100% {right:500px; bottom:0px;}
+  }
